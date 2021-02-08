@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.alcobook.fragment.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_viewPostFragment3"
+            app:destination="@id/viewPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPostFragment"
+        android:name="com.example.alcobook.fragment.EditPostFragment"
+        android:label="fragment_edit_post"
+        tools:layout="@layout/fragment_edit_post">
+        <argument
+            android:name="Post"
+            app:argType="com.example.alcobook.model.entity.Post" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.alcobook.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_viewPostFragment"
+            app:destination="@id/viewPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPostFragment"
+        android:name="com.example.alcobook.fragment.ViewPostFragment"
+        android:label="fragment_view_post"
+        tools:layout="@layout/fragment_view_post" >
+        <argument
+            android:name="Post"
+            app:argType="com.example.alcobook.model.entity.Post" />
+        <action
+            android:id="@+id/action_viewPostFragment_to_editPostFragment"
+            app:destination="@id/editPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPostFragment"
+        android:name="com.example.alcobook.fragment.AddPostFragment"
+        android:label="fragment_add_post"
+        tools:layout="@layout/fragment_add_post" />
+</navigation>
