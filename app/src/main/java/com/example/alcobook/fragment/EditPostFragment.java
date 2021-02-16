@@ -33,7 +33,7 @@ import java.util.function.Consumer;
 public class EditPostFragment extends Fragment {
 
 
-    
+
 
 
     private static final int RESULT_LOAD_IMG = 1;

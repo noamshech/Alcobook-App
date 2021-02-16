@@ -82,7 +82,7 @@ public class PostFb {
 
     public static void getAllPostsSince(long lastUpdated, final Consumer<List<Post>> listener) {
         Timestamp ts=new Timestamp(lastUpdated,0);
-      
+
         mPostsCollection.whereGreaterThanOrEqualTo("last_updated",ts).get()
                 .addOnCompleteListener(task -> {
                     List<Post> postData = new LinkedList<>();
