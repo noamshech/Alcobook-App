@@ -45,12 +45,13 @@
             android:id="@+id/login_username_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_500"
             android:ems="10"
             android:hint="Username"
             android:inputType="textPersonName"
-            android:visibility="gone"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
+            android:visibility="gone"
             app:layout_optimizationLevel="chains" />
 
         <EditText
@@ -69,12 +70,13 @@
             android:id="@+id/login_password_again_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_500"
             android:ems="10"
             android:hint="Password Again"
             android:inputType="textPassword"
-            android:visibility="gone"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
+            android:visibility="gone"
             app:layout_optimizationLevel="chains" />
 
         <View

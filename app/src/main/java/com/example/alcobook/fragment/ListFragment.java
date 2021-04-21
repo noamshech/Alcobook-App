@@ -124,7 +124,7 @@ public class ListFragment extends Fragment {
             this.mPost = post;
             if (!post.getImgUrl().equals("")) {
                 Picasso.get().load(post.getImgUrl()).placeholder(R.drawable.placeholder)
-                        .fit().centerInside().into(mImage);
+                        .fit().centerCrop().into(mImage);
             } else {
                 mImage.setImageResource(R.drawable.placeholder);
             }
