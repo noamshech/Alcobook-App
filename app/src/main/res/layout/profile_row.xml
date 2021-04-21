@@ -5,9 +5,11 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="100dp"
+    android:background="@color/teal_700"
     android:paddingBottom="5dp">
 
     <ImageView
+        android:contentDescription="@string/app_name"
         android:id="@+id/profile_row_img"
         android:layout_width="100dp"
         android:layout_height="0dp"
@@ -24,6 +26,7 @@
         android:ellipsize="end"
         android:maxLines="5"
         android:text="TextView"
+        android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/profile_row_edit"
@@ -39,6 +42,7 @@
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:text="View"
+        android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

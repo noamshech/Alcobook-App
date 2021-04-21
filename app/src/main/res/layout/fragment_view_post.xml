@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_700"
     android:orientation="vertical">
 
     <LinearLayout
@@ -12,6 +13,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:contentDescription="@string/app_name"
             android:id="@+id/view_post_img"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,6 +23,7 @@
             android:id="@+id/view_post_postedby_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -28,6 +31,7 @@
             android:id="@+id/view_post_text_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white" />
     </LinearLayout>
 </ScrollView>

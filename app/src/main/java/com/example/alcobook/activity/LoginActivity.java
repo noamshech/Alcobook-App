@@ -117,8 +117,7 @@ public class LoginActivity extends AppCompatActivity {
         if(!mIsLoginMode){
             if(isNullOrEmpty(mUsernameEt.getText().toString()))
                 return false;
-            if(isNullOrEmpty(mPasswordAgainEt.getText().toString()))
-                return false;
+            return !isNullOrEmpty(mPasswordAgainEt.getText().toString());
         }
         return true;
     }
@@ -127,6 +126,7 @@ public class LoginActivity extends AppCompatActivity {
         int visibility= visible ? View.VISIBLE : View.GONE;
         mPasswordAgainEt.setVisibility(visibility);
         mUsernameEt.setVisibility(visibility);
+        mSwitchBtn.setText(visible ? "Switch to login" : "Switch to register");
     }
 
 
